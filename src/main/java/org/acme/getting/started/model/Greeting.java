@@ -6,6 +6,14 @@ public class Greeting {
     public Greeting() {
     }
 
+    @Override
+    public String toString() {
+        return "Greeting{" +
+                "name='" + name + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

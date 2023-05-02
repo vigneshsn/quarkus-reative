@@ -15,4 +15,11 @@ public class Greetings {
     }
 
     List<Greeting> greetings;
+
+    @Override
+    public String toString() {
+        return "Greetings{" +
+                "greetings=" + greetings +
+                '}';
+    }
 }
