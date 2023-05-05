@@ -15,7 +15,6 @@ public class NonReactiveGreetingResource {
     @POST
     @ResponseStatus(204)
     @Path("/greetings")
-    @io.quarkus.vertx.http.Compressed
     public void greeting(Greetings greetings) {
         System.out.println("lots of greetings received "+ greetings.getGreetings().size());
         System.out.println("input greeting name "+ greetings.getGreetings().get(0).toString());
